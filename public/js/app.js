@@ -6,7 +6,7 @@ const weatherPara=document.getElementById('weather-info')
 
 function functionName(mytext) {
     var data=mytext;
-    var url="http://localhost:3000/weather?address="+data;
+    var url="/weather?address="+data;
     
     fetch(url).then((response) => {
         response.json().then((data) => {
