@@ -1,5 +1,7 @@
 console.log("Hello about page")
 
+
+
 const weatherPara=document.getElementById('weather-info')
 
 function functionName(mytext) {

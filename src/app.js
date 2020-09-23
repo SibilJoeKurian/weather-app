@@ -2,6 +2,8 @@ const path = require('path');
 const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
 
+const port =process.env.PORT||3000
+
 //setting up express
 const express = require('express');
 app = express();
@@ -54,6 +56,6 @@ app.get('*', (req, res) => {
     res.send("404 Page not found")
 })
 //server 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("RUNNING");
 });
