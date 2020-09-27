@@ -1,7 +1,5 @@
 console.log("Hello about page")
 
-
-
 const weatherPara=document.getElementById('weather-info')
 
 function functionName(mytext) {
@@ -10,8 +8,9 @@ function functionName(mytext) {
     
     fetch(url).then((response) => {
         response.json().then((data) => {
-            var weatherDetails=JSON.stringify(data);
-            weatherPara.textContent=weatherDetails;
+            var weatherDetails=data;
+            
+            weatherPara.textContent=data;
             console.log(weatherDetails)
         })
     });
