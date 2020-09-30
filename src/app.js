@@ -2,7 +2,7 @@ const path = require('path');
 const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
 
-const port =process.env.PORT||3000
+const port =process.env.PORT||3001
 
 //setting up express
 const express = require('express');
